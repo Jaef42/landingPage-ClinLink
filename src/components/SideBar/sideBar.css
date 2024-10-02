@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.logo {
+    padding: 10px;
+    display: flex;
+    transition: 500ms ease;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+
+.logo span {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 4px;
+    position: absolute;
+    transition: 1000ms;
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.link {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: table;
+    width: 300px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+
+.fas {
+    position: relative;
+    /* width: 70px;
+    height: 40px; */
+    font-size: 30px;
+    /*   text-align: center; */
+    color: #5b7ce9;
+    transition: 300ms;
+}
+
+
+
+.nav-item {
+    position: relative;
+    margin-left: 35px;
+    transition: 1300ms;
+    display:inline-block;
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+
+
+
+body {
+    background-color: rgb(255,255,255);
+    
+}
+
+.nav-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 80px;
+    overflow: hidden;
+    transition: width 300ms linear;
+    box-shadow: 0 20px 35px rgba(0 0 0 / 0.3);
+    z-index: 1;
+}
+
+
+.nav-side>ul>li {
+    list-style: none;
+    margin-left: -1.5rem;
+    transition: 300ms ease;
+}
+
+.li:hover {
+    background-color: rgba(242 158 158 / .2);
+}
+
+
+
+.li:hover .fas,
+.nav-item {
+    color: #060606;
+}
+
+
+
+.li {
+    padding: 10px;
+    transition: 1000ms;
+}
+
+.nav-side:hover {
+    width: 240px;
+    transition: 300ms ease;
+}
+
+.nav-side:hover .nav-item{
+    opacity: 100;
+    transform: translateX(0);
+}
+
+.nav-side:hover  .title{
+    opacity: 100;
+    transform: translateX(0);
+}
+
+/* .nav-side:hover > ul > .li > .link > span {
+    animation: letras 300ms linear;
+} */
+
+@keyframes letras {
+    0% {
+        transform: scale(1.2);
+        background-color: #5b7ce9;
+    }
+
+    100% {
+        transform: translateX(none);
+    }
+}
+
