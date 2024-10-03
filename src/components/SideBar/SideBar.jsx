@@ -22,7 +22,7 @@ export const SideBar = () => {
                         </li>
 
                         <li className='li'>
-                            <HashLink to='/HomePage#nosotros' className='link'>
+                            <HashLink to='/#nosotros' className='link'>
                                 <svg className="fas" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26 26">
                                     <g fill="none">
                                         <defs>
