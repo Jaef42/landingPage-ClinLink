@@ -1,13 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
+/* Estilo base para los enlaces y botones */
+.link, .button-link {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 300ms;
 }
 
+.link:hover, .button-link:hover {
+    background-color: rgba(242, 158, 158, 0.2);
+}
+
+.link .nav-item, .button-link .nav-item {
+    opacity: 100;
+    transform: translateX(0);
+}
 
 .logo {
     padding: 10px;
@@ -39,19 +53,6 @@
     margin-left: 20%;
 }
 
-.link {
-    position: relative;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    display: table;
-    width: 300px;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-
-
 .fas {
     position: relative;
     font-size: 30px;
@@ -60,7 +61,7 @@
     margin-left: 7%;
 }
 
-svg{
+svg {
     margin-left: 6%;
 }
 
@@ -68,17 +69,13 @@ svg{
     position: relative;
     margin-left: 35px;
     transition: 1300ms;
-    display:inline-block;
+    display: inline-block;
     opacity: 0;
     transform: translateX(200px);
 }
 
-
-
-
 body {
-    background-color: rgb(255,255,255);
-    
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-side {
@@ -95,7 +92,6 @@ body {
     z-index: 1;
 }
 
-
 .nav-side>ul>li {
     list-style: none;
     margin-left: -1.5rem;
@@ -106,14 +102,10 @@ body {
     background-color: rgba(242 158 158 / .2);
 }
 
-
-
 .li:hover .fas,
 .nav-item {
     color: #060606;
 }
-
-
 
 .li {
     padding: 10px;
@@ -125,45 +117,12 @@ body {
     transition: 300ms ease;
 }
 
-.nav-side:hover .nav-item{
+.nav-side:hover .nav-item {
     opacity: 100;
     transform: translateX(0);
 }
 
-.nav-side:hover  .title{
-    opacity: 100;
-    transform: translateX(0);
-}
-
-/* .nav-side:hover > ul > .li > .link > span {
-    animation: letras 300ms linear;
-} */
-
-.button-container {
-    display: flex;
-    justify-content: space-between; /* Ajusta esto según sea necesario */
-    padding: 10px;
-}
-
-.button-link {
-    position: relative;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-    text-decoration: none;
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: 300ms;
-}
-
-.button-link:hover {
-    background-color: rgba(242, 158, 158, 0.2);
-}
-
-.button-link .nav-item {
+.nav-side:hover .title {
     opacity: 100;
     transform: translateX(0);
 }
@@ -178,4 +137,3 @@ body {
         transform: translateX(none);
     }
 }
-
