@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { NombreContexto } from '../../Index'
+import { HashLink } from 'react-router-hash-link';
 import a from '../../assets/A.png'
 import './sideBar.css'
 
@@ -14,14 +15,14 @@ export const SideBar = () => {
                 <nav className='nav-side'>
                     <ul>
                         <li className='logo'>
-                            <Link className='link'>
+                            <HashLinkLink  to='/' className='link'>
                                 <img src={a} alt="" />
                                 <span className='title'>ClincLink</span>
-                            </Link>
+                            </HashLinkLink>
                         </li>
 
                         <li className='li'>
-                            <Link to='/HomePage#nosotros' className='link'>
+                            <HashLink to='/HomePage#nosotros' className='link'>
                                 <svg className="fas" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26 26">
                                     <g fill="none">
                                         <defs>
@@ -40,16 +41,16 @@ export const SideBar = () => {
                                     </g>
                                 </svg>
                                 <span className='nav-item'>Sobre Nosotros</span>
-                            </Link>
+                            </HashLink>
                         </li>
 
                         <li className='li'>
-                            <Link to='/HomePage#servicios' className='link'>
+                            <HashLink to='/HomePage#servicios' className='link'>
                                 <svg className="fas" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                                     <path fill="#5b7ce9" d="M4 22q-.825 0-1.412-.587T2 20V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v12q0 .825-.587 1.413T20 22zm6-16h4V4h-4zm1 9v3h2v-3h3v-2h-3v-3h-2v3H8v2z" />
                                 </svg>
                                 <span className='nav-item'>Servicios</span>
-                            </Link>
+                            </HashLink>
                         </li>
 
                         <li className='li'>
