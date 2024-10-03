@@ -139,15 +139,19 @@ body {
     animation: letras 300ms linear;
 } */
 
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Ajusta esto según sea necesario */
+    padding: 10px;
+}
+
 .button-link {
     position: relative;
     color: black;
     font-size: 20px;
     font-weight: bold;
-    display: table;
-    width: 300px;
+    display: inline-block;
     text-decoration: none;
-    overflow: hidden;
     background: none;
     border: none;
     padding: 10px;
@@ -155,25 +159,11 @@ body {
     transition: 300ms;
 }
 
-.button-link svg {
-    margin-left: 6%;
-}
-
-.button-link .nav-item {
-    position: relative;
-    margin-left: 35px;
-    transition: 1300ms;
-    display: inline-block;
-    opacity: 0;
-    transform: translateX(200px);
-}
-
 .button-link:hover {
     background-color: rgba(242, 158, 158, 0.2);
 }
 
-.button-link:hover .nav-item {
-    color: #060606;
+.button-link .nav-item {
     opacity: 100;
     transform: translateX(0);
 }
