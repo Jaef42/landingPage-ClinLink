@@ -15,10 +15,10 @@ export const SideBar = () => {
                 <nav className='nav-side'>
                     <ul>
                         <li className='logo'>
-                            <HashLinkLink  to='/' className='link'>
+                            <HashLink to='/' className='link'>
                                 <img src={a} alt="" />
                                 <span className='title'>ClincLink</span>
-                            </HashLinkLink>
+                            </HashLink>
                         </li>
 
                         <li className='li'>
