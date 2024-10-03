@@ -1,31 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito';
-}
-
-li{
-    list-style: none;
-} 
-
-.contenedor-general{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-image: 
-    url(./assets/fondo3.png);
-    background-position: right;
-    background-size: contain ;
-    background-repeat: no-repeat;
-}
-
-.contenido{
-    width: 95%;
-    height: 100%;
-    margin-left: 80px;
-    padding: 10px;
- 
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

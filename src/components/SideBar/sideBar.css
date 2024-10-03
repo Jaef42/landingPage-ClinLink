@@ -9,7 +9,6 @@
 }
 
 
-
 .logo {
     padding: 10px;
     display: flex;
@@ -36,6 +35,10 @@
     transform: translateX(200px);
 }
 
+.nav-side img {
+    margin-left: 20%;
+}
+
 .link {
     position: relative;
     color: black;
@@ -51,15 +54,15 @@
 
 .fas {
     position: relative;
-    /* width: 70px;
-    height: 40px; */
     font-size: 30px;
-    /*   text-align: center; */
     color: #5b7ce9;
     transition: 300ms;
+    margin-left: 7%;
 }
 
-
+svg{
+    margin-left: 6%;
+}
 
 .nav-item {
     position: relative;
