@@ -13,7 +13,7 @@ export const App = () => {
       <Router basename="/landingPage-ClinLink">
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
           {/* Añade más rutas según sea necesario */}
         </Routes>
       </Router>
