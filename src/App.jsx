@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css'
+import { HomePage } from './pages/HomePage/HomePage'
+import { LoginPage } from './pages/LoginPage/LoginPage'
 
 export const App = ()=> {
   
@@ -14,8 +16,8 @@ export const App = ()=> {
     <>
     <Router basename="/landingPage-ClinLink">
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={LoginPage} />
         {/* Añade más rutas según sea necesario */}
       </Routes>
     </Router>
